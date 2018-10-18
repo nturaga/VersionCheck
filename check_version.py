@@ -34,7 +34,6 @@ def run(directory):
     descriptions = find_description(directory)
     for description in descriptions:    
         package_name, version = read_description(description)
-        print(package_name, version)
         if not check_version(version):
             print(package_name, version)
     return
